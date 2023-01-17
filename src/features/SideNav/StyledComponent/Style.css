@@ -1,0 +1,38 @@
+.navButton {
+    width : 100%;
+    border : 1px solid black;
+}
+
+.dropend {
+    margin-right: 300px;
+}
+
+.btn {
+    width : 60%;
+    /* height: 50px; */
+    padding: 4%;
+    /* border : 3px solid white; */
+    border-radius: 10px;
+    background-color: rgb(24, 24, 83);
+    color: white;
+    margin : 5%;
+    text-align: center;
+    /* text-decoration: none; */
+}
+
+.btn:hover {
+    color: white;
+}
+
+.btn:active, .btn:focus {
+    border: 2px solid white;
+}
+
+.home {
+    text-decoration: none;
+}
+
+/* .sideNav {
+    position: sticky;
+    top: 40%;
+} */

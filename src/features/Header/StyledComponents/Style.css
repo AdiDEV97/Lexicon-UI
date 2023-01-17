@@ -1,0 +1,48 @@
+.header {
+    height          : 100%;
+    background-color: rgb(24, 24, 83);
+    border          : 1px solid black;
+    color           : white;
+    /* box-shadow   : 0px 3px rgba(0, 0, 0, 0.1); */
+    box-shadow      : rgba(0, 0, 0, 0.2) 0px 2px 8px 15px;
+    text-align      : center;
+    position: sticky; /* Allocates space for the element, but moves it with you when you scroll */
+    top: 0; /* specifies the start position for the sticky behavior - 0 is pretty common */
+    z-index: 1;
+
+    /* position: fixed; */
+    /* top : 0; */
+    /* left: 0; */
+}
+
+.heading {
+    /* font-family: sans-serif; */
+    font-family: 'Roboto', sans-serif;
+    font-size:40px;
+    /* transform: scaleY(2); */
+    /* transform: scaleX(1.8); */
+    text-align: center;
+}
+
+.logo {
+    background-color: rgb(24, 24, 83);
+    /* text-align: center; */
+    /* position: relative; */
+    /* right: 70px; */
+    /* border: 1px solid white; */
+}
+
+.logo:hover {
+    cursor: pointer;
+    background-color: rgb(24, 24, 83);
+    /* border: none; */
+    /* border: 1px solid white; */
+}
+
+.mode {
+    font-size: large;
+    background-color: rgb(24, 24, 83);
+    border: none;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}

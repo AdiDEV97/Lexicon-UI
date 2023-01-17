@@ -1,0 +1,34 @@
+/* .display {
+    border : 1px solid black;
+    text-align : center;
+    margin : none;
+    padding : 1%;
+    width: 100%;
+    height: fit-content;
+} */
+
+.wordHeading {
+    /* border : 1px solid black; */
+    border-radius: 10px;
+    /* background-color: rgb(99, 89, 78); */
+    background-color: #9292ca;
+    width : 60%;
+    margin-top: 12%;
+    margin-left: 20%;
+    /* margin : 10%; */
+    padding :  1%;
+    /* text-align: center; */
+}
+
+.wordBlock {
+    /* border : 1px solid black; */
+    width : 90%;
+    margin: 5%;
+    padding : 1%;
+    text-align: center;
+    /* background-color: rgb(146, 103, 215); */
+    border-radius: 10px;
+    /* position: relative; */
+    /* left: 30%; */
+
+}
