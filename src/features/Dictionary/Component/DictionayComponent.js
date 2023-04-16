@@ -174,6 +174,14 @@ const DictionayComponent = (props) => {
     document.body.style.overflowY= 'scroll';
   }
 
+  // Text to Speech
+  const handleHear = (e) => {
+    var hearWord = new SpeechSynthesisUtterance(e);
+    var voices = window.speechSynthesis.getVoices();
+    hearWord.voice = voices[1];
+    window.speechSynthesis.speak(hearWord);
+  }
+
   const sortById = [...dict].sort((a, b) => a.id - b.id);
 
   const sortByWord = [...dict].sort((a, b) => a.word.toLowerCase() > b.word.toLowerCase() ? 1 : -1);
@@ -250,7 +258,7 @@ const DictionayComponent = (props) => {
               <tr className="tableRow" key={index}>
                 {/* <td className='id'>{ce.id}</td> */}
                 <td className='id'>{index + 1}</td>
-                <td className='word'>{ce.word}</td>
+                <td className='word' onClick={() => handleHear(ce.word)} title="Click for pronunciation">{ce.word}</td>
                 <td className='meaning'>{ce.meaning}</td>
                 <td className='serialNo'>{ce.serialNo}</td>
                 <td className='isDelete'><span className="material-icons mx-2" title="Delete this Word?" onClick={()=> { handleDelete(ce.id) }}>delete</span>

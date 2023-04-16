@@ -32,3 +32,10 @@
     /* left: 30%; */
 
 }
+
+.todaysWord {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}

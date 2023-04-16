@@ -95,29 +95,39 @@ const SearchComponent = (props) => {
     
   }
 
+  // Text to Speech
+  const handleHear = (e) => {
+    var hearWord = new SpeechSynthesisUtterance(e);
+    var voices = window.speechSynthesis.getVoices();
+    hearWord.voice = voices[1];
+    window.speechSynthesis.speak(hearWord);
+  }
+
 
   
   const searchWord = <>
     <div className="searchDiv my-5" style={{backgroundColor: 'rgb(121, 169, 171)'}}>
-        <table>
-          <tr>
-            <td className='dataName'><h4>Word - </h4></td>
-            <td className='dataValue'><h5>{word.word}</h5></td>
-          </tr>
-          <tr>
-            <td className='dataName'><h4>Meaning - </h4></td>
-            <td className='dataValue'> <h5>{word.meaning}</h5></td>
-          </tr>
-          <tr>
-            <td className='dataName'><h4>Serial No - </h4></td>
-            <td className='dataValue'><h5>{word.serialNo}</h5></td>
-          </tr>
-        </table>
+      
+      <table>
+        <tr>
+          <td className='dataName'><h4>Word - </h4></td>
+          <td className='dataValue'><h5>{word.word}</h5></td>
+        </tr>
+        <tr>
+          <td className='dataName'><h4>Meaning - </h4></td>
+          <td className='dataValue'> <h5>{word.meaning}</h5></td>
+        </tr>
+        <tr>
+          <td className='dataName'><h4>Serial No - </h4></td>
+          <td className='dataValue'><h5>{word.serialNo}</h5></td>
+        </tr>
+      </table>
+      <span className="material-symbols-rounded" onClick={() => handleHear(word.word)} title="Click for pronunciation">volume_up</span>
     </div>
   </>
 
   const searching = <>
-  <div className="searchDiv my-4 text-center">
+  <div className="searchDiv1 my-4 text-center">
     <p>Searching...</p>
   </div>
   </>
@@ -127,7 +137,7 @@ const SearchComponent = (props) => {
   ////////////////////////////////////////////////////////////////////////////////////////////////
 
   const notFound = <>
-    <div className="searchDiv my-4 text-center">
+    <div className="searchDiv1 my-4 text-center">
       <p style={{color:'red'}}>Word not Found!! You can add '{word}'.</p>
     </div>
   </>

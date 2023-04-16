@@ -44,6 +44,15 @@ async function getDictionary() {
   console.log("Dict - ")
   console.log(dict);
 
+  // Text to Speech
+  const handleHear = (e) => {
+    var hearWord = new SpeechSynthesisUtterance(e);
+    var voices = window.speechSynthesis.getVoices();
+    hearWord.voice = voices[1];
+    window.speechSynthesis.speak(hearWord);
+  }
+
+
   // const [num, setNum] = useState(Math.floor(Math.random()*dict.length));
   
 
@@ -51,7 +60,7 @@ async function getDictionary() {
     <div className='display my-5'>
       <h2>Welcome to Lexicon</h2>
       <div className='wordHeading'>
-        <h4>Today's Word</h4>
+        <div className="todaysWord"><span></span><h4>Today's Word </h4><span className="material-symbols-rounded" onClick={() => handleHear(dict[number].word)} title="Click for pronunciation">volume_up</span></div>
         {/* Try to use map function on the dict and traverse till number */}
             
             {dict.map((ce, index) => {

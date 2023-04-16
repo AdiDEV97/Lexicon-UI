@@ -39,6 +39,10 @@ th {
     width     : 20%;
 }
 
+.word:hover {
+    cursor: pointer;
+}
+
 .meaning {
     border    : 1px solid black;
     text-align: start;
