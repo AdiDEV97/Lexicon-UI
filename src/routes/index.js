@@ -8,6 +8,8 @@ import Dictionary from '../features/Dictionary/Container/Dictionary'
 import Search from '../features/Search/Container/Search'
 //import 'font-awesome/css/font-awesome.min.css';
 
+// All Routers
+
 const Routers = () => {
 
   const [dict, setDict] = useState([]);
