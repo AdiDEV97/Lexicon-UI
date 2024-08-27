@@ -3,6 +3,8 @@ import axios from 'axios';
 import '../StyledComponent/Style.css'
 import { useNavigate } from "react-router-dom";
 
+// Add Word Component
+
 const AddWordComponent = (props) => {
 
     const [data, setData] = useState({
