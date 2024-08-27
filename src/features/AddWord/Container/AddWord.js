@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import AddWordComponent from '../Conponent/AddWordComponent'
 
+// Add Word Container
+
 const AddWord = (props) => {
 
   const [dict, setDict] = useState([]);
