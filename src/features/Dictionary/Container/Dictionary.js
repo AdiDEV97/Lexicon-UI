@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import DictionayComponent from '../Component/DictionayComponent'
 
+// Dictionary Container
+
 const Dictionary = () => {
 
   const [data, setData] = useState()
