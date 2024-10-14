@@ -4,6 +4,8 @@ import React, { useState, useEffect, useReducer } from "react";
 import { useNavigate } from "react-router-dom";
 import "../StyledComponent/Style.css";
 
+// Dictionary Component
+
 const DictionayComponent = (props) => {
   const [dict, setDict] = useState([]);
 
