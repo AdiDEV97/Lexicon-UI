@@ -1,6 +1,8 @@
 import React from 'react'
 import '../StyledComponent/Style.css'
 
+// Footer Component
+
 const FooterComponent = () => {
 
   var time = new Date()
