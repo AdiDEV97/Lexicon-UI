@@ -1,6 +1,8 @@
 import React, {useState } from 'react'
 import '../StyledComponents/Style.css'
 
+// Mode Component
+
 const Mode = () => {
 
     let myStyle = {
