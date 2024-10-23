@@ -2,6 +2,8 @@ import axios from 'axios';
 import React, { useState, useEffect } from 'react'
 import '../StyledComponent/Style.css'
 
+// Home Container
+
 const HomePageContainer = (props) => {
 
   const [dict, setDict] = useState([]);
