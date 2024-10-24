@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import HomePageContainer from '../Component/HomePageContainer'
 
+// Home Page Container
+
 const HomePage = (props) => {
 
   const [wordLen, setWordLen] = useState();
