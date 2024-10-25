@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import SearchComponent from '../Component/SearchComponent'
 
+// Search Container
+
 const Search = (props) => {
 
   const [data, setData] = useState({word:'', meaning:'', serialNo:null});
