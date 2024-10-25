@@ -2,6 +2,8 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react'
 import "../StyledComponent/Style.css";
 
+// Search Component
+
 const SearchComponent = (props) => {
 
   const [dict, setDict] = useState([])
