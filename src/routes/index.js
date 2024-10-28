@@ -8,7 +8,7 @@ import Dictionary from '../features/Dictionary/Container/Dictionary'
 import Search from '../features/Search/Container/Search'
 //import 'font-awesome/css/font-awesome.min.css';
 
-// All Routers
+// All Routers Component
 
 const Routers = () => {
 
