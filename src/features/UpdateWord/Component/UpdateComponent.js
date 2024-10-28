@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 
+// Update Word Component
+
 const UpdateComponent = () => {
 
   const [dict, setDict] = useState([]);
